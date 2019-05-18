@@ -1,0 +1,180 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background: linear-gradient(to right, #1488CC , #2B32B2);
+
+}
+.row{
+  margin: 5% 0;
+}
+.dark{
+  background: black;
+  color: white;
+}
+button #headingThree{
+  color: white !important;
+}
+#mission .card p:hover{
+  p:before{
+    color: white;
+    background: red;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #mission{
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+  #tsaGif img{
+    height: 400px;
+    margin: 0;
+    padding: 0;
+  }
+  #rise{
+    margin-bottom: 15px;
+  }
+  #footer a{
+    padding: 1px;
+    width: 40%;
+    height: 20%;
+  }
+  #members{
+    display: none;
+  }
+
+}
+.card{
+  height: 100%;
+}
+nav{
+  background: black;
+  color: white;
+}
+.btn{
+  margin: 10px;
+}
+
+.carousel img{
+  height: 500px;
+  width: 400px;
+}
+#stem-jumbotron{
+  color: black;
+}
+
+#article h1:hover{
+  text-decoration: underline;
+}
+#footer{
+  padding: 20px;
+}
+#footer img{
+  width: 100%;
+  height: 60vh;
+}
+
+
+/*TSA board*/
+
+h1
+{
+	color:#fff;
+	margin:40px 0 60px 0;
+	font-weight:300;
+}
+
+.our-team-main
+{
+	width:100%;
+	height:auto;
+	border-bottom:5px #323233 solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:28px;
+}
+
+
+.our-team-main img
+{
+	border-radius:50%;
+	margin-bottom:20px;
+	width: 90px;
+}
+
+.our-team-main h3
+{
+	font-size:20px;
+	font-weight:700;
+}
+
+.our-team-main p
+{
+	margin-bottom:0;
+}
+
+.team-back
+{
+	width:100%;
+	height:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:#fff;
+
+}
+
+.team-front
+{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:10;
+	background:#fff;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover .team-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
+}
+
+/*Typing*/
+.typewriter h1 {
+  font-family: monospace; /* Web-safe typewriter-like font */
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blinking-cursor .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}

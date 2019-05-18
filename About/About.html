@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="../bootstrap-4.3.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>TSA 2018-19 | Webmasters</title>
+  <style>
+    *{
+      cursor: url("./css/firecursor.cur"), default;
+    }
+
+    #loader {
+      background: #000;
+      background: radial-gradient(#222, #000);
+      bottom: 0;
+      left: 0;
+      overflow: hidden;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 99999;
+    }
+
+    .loader-inner {
+      bottom: 0;
+      height: 60px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100px;
+    }
+
+    .loader-line-wrap {
+      animation:
+      spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+      ;
+      box-sizing: border-box;
+      height: 50px;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      transform-origin: 50% 100%;
+      width: 100px;
+    }
+    .loader-line {
+      border: 4px solid transparent;
+      border-radius: 100%;
+      box-sizing: border-box;
+      height: 100px;
+      left: 0;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100px;
+    }
+    .loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+    .loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+    .loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+    .loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+    .loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+    .loader-line-wrap:nth-child(1) .loader-line {
+      border-color: hsl(0, 80%, 60%);
+      height: 90px;
+      width: 90px;
+      top: 7px;
+    }
+    .loader-line-wrap:nth-child(2) .loader-line {
+      border-color: hsl(60, 80%, 60%);
+      height: 76px;
+      width: 76px;
+      top: 14px;
+    }
+    .loader-line-wrap:nth-child(3) .loader-line {
+      border-color: hsl(120, 80%, 60%);
+      height: 62px;
+      width: 62px;
+      top: 21px;
+    }
+    .loader-line-wrap:nth-child(4) .loader-line {
+      border-color: hsl(180, 80%, 60%);
+      height: 48px;
+      width: 48px;
+      top: 28px;
+    }
+    .loader-line-wrap:nth-child(5) .loader-line {
+      border-color: hsl(240, 80%, 60%);
+      height: 34px;
+      width: 34px;
+      top: 35px;
+    }
+
+    @keyframes spin {
+      0%, 15% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+
+    <div id="loader">
+      <div class="loader-inner">
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+        <div class="loader-line-wrap">
+          <div class="loader-line"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div id="contents">
+      <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+          <a class="navbar-brand text-white" href="https://tsaweb.org" target="_blank">
+            <img src="img/tsa.png" alt="tsa" height="90">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav mx-auto">
+              <a class="btn btn-outline-light btn-lg" href="./About.html">About</a>
+              <a class="btn btn-link btn-lg  text-warning" href="#RockRidgeTSA">About Us</a>
+              <a class="btn btn-link btn-lg   text-warning" href="#whatIsTSA">Inspiration</a>
+              <a class="btn btn-link btn-lg   text-warning" href="#rrhs">Process</a>
+              <a class="btn btn-outline-light btn-lg" href="../Typing Test/Typing.html">Typing Game</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!--Our TSA-->
+      <div id="ourTSA" class="row">
+        <div class="col">
+          <div class="jumbotron" style="background: linear-gradient(to right, #1488CC , #2B32B2); color: white; padding: 40px;">
+            <h1 class="text-center text-white" style="font-size: 10vw;">AcademiesHacks</h1>
+
+            <div style="width: 80%; margin: auto;">
+              <img style="width: 20%; color: white;"class="rounded mx-auto d-block" src="./img/whiteDown.png" />
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!--What is TSA-->
+      <div id="RockRidgeTSA" class="row" style="background:white; width: 100%;">
+        <div class="col" style="padding: 7vw 20vw;">
+
+          <h1 style="padding-bottom: 10px; color: black; font-size: 10vh;">Who are We?</h1>
+
+          <hr class="my-4" style="border-top: 1px black solid;">
+
+
+          <h1 style="padding-bottom: 10px; color: black; font-size: 6vh;">Our History</h1>
+          <p style="color: black; font-size: 20px;">
+            We are a group of high-school students from Loudoun County, VA. We all attend the Academies of Loudoun and specialize in a Computer Science Pathway. Learn more about us below!
+          </p>
+
+          <h1 style="padding-bottom: 10px; color: black; font-size: 6vh;">The Team</h1>
+
+          <div class="container">
+            <div class="row">
+
+              <!--team-1-->
+              <div class="col-lg-4">
+                <div class="our-team-main">
+
+                  <div class="team-front">
+                    <img src="./img/akhileshProfile.png" class="img-fluid" />
+                    <h3>Akhilesh Sivaganesan</h3>
+                    <p>Web Dev</p>
+
+                  </div>
+
+                  <div class="team-back">
+                    <span>
+                      Akhilesh is intrigued by coding and he loves the way code is able to solve practical problems and more importantly allow us to express our ideas digitally. He is also an avid learner!
+                    </span>
+
+                  </div>
+
+                </div>
+              </div>
+              <!--team-1-->
+
+              <!--team-2-->
+              <div class="col-lg-4">
+                <div class="our-team-main">
+
+                  <div class="team-front">
+                    <img src="./img/arjunProfile.jpg" class="img-fluid" />
+                    <h3>Arjun Trivedi</h3>
+                    <p>Game Dev</p>
+                  </div>
+
+                  <div class="team-back">
+                    <span>
+                      Arjun is eager to code.
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+              <!--team-2-->
+
+              <!--team-3-->
+              <div class="col-lg-4">
+                <div class="our-team-main">
+
+                  <div class="team-front">
+                    <img src="./img/elliottProfile.jpg" class="img-fluid" />
+                    <h3>Elliott Druga</h3>
+                    <p>Typing Test Dev</p>
+                  </div>
+
+                  <div class="team-back">
+                    <span>
+                      "I am cool" is what Elliott says.
+                    </span>
+                  </div>
+
+                </div>
+              </div>
+              <!--team-3-->
+
+
+            </div>
+          </div>
+
+      </div>
+
+      </div>
+
+      <div id="whatIsTSA" class="row" style="background:  linear-gradient(to bottom right, orange, red); width: 100%;">
+        <div class="col" style="padding: 7vw 20vw;">
+          <h1 style="padding-bottom: 10px; color: white; font-size: 10vh;">Our Inspiration</h1>
+          <hr style="border-top: 1px white solid; width: 100%;">
+          <br />
+          <p style="color: white;">
+            We are learners. We are coders. We were motivated by our need to keep learning and growing. We knew that we wanted to create a fun game, use some type of search engine, and enrich our experience with web development.
+            What's better than combining all those ideas and creating a typing game embedded in a website? That's precisely what we did.
+          </p>
+
+          <h1 style="padding-bottom: 10px; color: white; font-size: 10vh;">Tools We Used</h1>
+
+          <div class="row">
+            <div id="mission" class="col-sm-12 col-md-4">
+              <div class="card" style="background: white; color: black;">
+                <img src="./img/html5Icon.png" class="card-img-top mx-auto d-block w-100" alt="...">
+                <div class="card-header font-weight-bolder" style="font-size: 5vh;">HTML<img width="35vh;" height="35vh" src="./img/html5Icon.png" /></div>
+                <div class="card-body">
+                  <p class="card-text">Technically, HTML stands for Hypertext Markup Language and it is a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages. Basically, it is used to structure the raw text and content of the website.</p>
+                  <br />
+                  <br />
+                </div>
+              </div>
+            </div>
+            <div id="mission" class="col-sm-12 col-md-4">
+              <div class="card" style="background: white; color: black;">
+                <img src="./img/css3.png" class="card-img-top mx-auto d-block w-100" alt="..." >
+                <div class="card-header font-weight-bolder" style="font-size: 5vh;">CSS<img width="35vh;" height="35vh" src="./img/css3.png" /></div>
+                <div class="card-body">
+                  <p class="card-text">
+                    CSS3 stands for Cascading Style Sheet. It is used to add color and style the website. It can control the margins, padding, and various other positioning attributes of the html elements.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="mission" class="col-sm-12 col-md-4">
+              <div class="card" style="background: white; color: black;">
+                <img src="./img/javalogo.png" class="card-img-top mx-auto d-block w-100" alt="...">
+                <div class="card-header font-weight-bolder" style="font-size: 5vh;">Java<img width="35vh;" height="35vh" src="./img/javalogo.png" /></div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Java is a Object Oriented Programming Language. This programming language is already well-established because it can be used on any platform and is very efficient. This language can be used to create games.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!--Rock Ridge-->
+      <div id="rrhs" class="row" style="background: linear-gradient(to right, purple , red); ;width: 100%;">
+        <div class="col" style="padding: 7vw 20vw;">
+          <h1 style="padding-bottom: 10px; color: white; font-size: 10vh;">The Process</h1>
+          <hr style="border-top: 1px white solid; width: 100%;">
+
+          <p style="color:white; ">
+            We encountered a variety of challenges and problems in the process of developing the typing test game and the website.
+          </p>
+
+          <h1 style="padding-bottom: 10px; color: white; font-size: 8vh;">Challenges</h1>
+          <h1 style="padding-bottom: 10px; color: white; font-size: 8vh;">Solutions</h1>
+
+
+        </div>
+
+
+      </div>
+
+      <div id="otherPages" class="row">
+        <div class="col">
+          <div class="jumbotron" style="background: linear-gradient(to right, #1488CC , #2B32B2); color: white; padding: 40px;">
+            <h1 class="text-center text-white" style="font-size: 8vw;">Head on to the Game!</h1>
+
+            <div style="width: 80%; margin: auto;">
+              <img style="width: 20%; color: white;"class="rounded mx-auto d-block" src="./img/whiteDown.png" />
+            </div>
+
+            <a class="btn btn-outline-light btn-lg mx-auto d-block w-50" href="../Typing Test/Typing.html">Typing Game</a>
+
+
+          </div>
+        </div>
+      </div>
+      <!--Footer-->
+      <div class="row">
+        <hr style="border-top: 1px white solid; width: 100%;">
+        <p class="text-center mx-auto d-block text-white">COPYRIGHT © 2019 AcademiesHacks<br /> Team: #15</p>
+
+        <!-- Copyright -->
+      </div>
+
+
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <!--Script for loading icon-->
+  <script>
+    document.onreadystatechange = function () {
+      var state = document.readyState
+      if (state == 'interactive') {
+        document.getElementById('contents').style.visibility="hidden";
+      } else if (state == 'complete') {
+        setTimeout(function(){
+          document.getElementById('interactive');
+          document.getElementById('loader').style.visibility="hidden";
+          document.getElementById('contents').style.visibility="visible";
+        },1000);
+      }
+    }
+
+  </script>
+
+
+</body>
+
+</html>
